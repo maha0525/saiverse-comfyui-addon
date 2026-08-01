@@ -20,7 +20,7 @@
 
    ```bash
    cd <SAIVerseのルート>/expansion_data
-   git clone <このリポジトリのURL> saiverse-comfyui-addon
+   git clone https://github.com/maha0525/saiverse-comfyui-addon.git saiverse-comfyui-addon
    ```
 
 2. Playbook を取り込みます:
