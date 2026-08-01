@@ -1,0 +1,7 @@
+{
+    "name": "saiverse-comfyui-addon",
+    "display_name": "ローカル画像生成 (ComfyUI)",
+    "description": "ローカルで起動している ComfyUI サーバーに接続し、ペルソナが画像を生成できるようにします。生成画像は SAIVerse のアイテムとして登録されます。ComfyUI 本体と生成モデルは別途インストールが必要です (README 参照)。",
+    "version": "0.1.0",
+    "manifest_version": 2
+}
