@@ -26,7 +26,9 @@ from saiverse.media_utils import store_image_bytes
 
 logger = logging.getLogger(__name__)
 
-COMFYUI_BASE_URL = os.environ.get("COMFYUI_BASE_URL", "http://127.0.0.1:8188")
+# 末尾スラッシュは剥がす — "http://host:8188/" のまま f"{base}/prompt" と連結すると
+# "//prompt" になり、ComfyUI (aiohttp) は 405 Method Not Allowed を返す (2026-08-31 実測)。
+COMFYUI_BASE_URL = os.environ.get("COMFYUI_BASE_URL", "http://127.0.0.1:8188").rstrip("/")
 WORKFLOW_DIR = Path(__file__).parent / "comfyui_workflows"
 PROGRESS_POLL_INTERVAL = 3  # seconds
 PROGRESS_TIMEOUT = 300  # seconds (5 minutes)
