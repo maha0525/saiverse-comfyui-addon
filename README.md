@@ -47,11 +47,11 @@ COMFYUI_BASE_URL=http://127.0.0.1:8188
 
 ### 2. モデルを配置する (同梱ワークフロー Anima を使う場合)
 
-同梱の `tools/comfyui_workflows/Anima.json` は [Anima](https://huggingface.co/circlestone-labs/Anima) (自然言語プロンプト対応のアニメ系モデル) を使うワークフローです。以下の3ファイルを配布元 (Hugging Face など) から入手し、ComfyUI の `models/` 配下に配置してください:
+同梱の `tools/comfyui_workflows/Anima.json` は Anima (自然言語プロンプト対応のアニメ系モデル) の 2.9B 版を使うワークフローです。モデル本体は [Anima-2.9B (CivitAI)](https://civitai.com/models/2855007) の v1.0 から、テキストエンコーダーと VAE は [Anima (Hugging Face)](https://huggingface.co/circlestone-labs/Anima) から入手し、以下の3ファイルを ComfyUI の `models/` 配下に配置してください:
 
 | ファイル | 置き場所 (ComfyUI の models/ 配下) |
 |---|---|
-| `anima-base-v1.0.safetensors` | `diffusion_models/` (または `unet/`) |
+| `anima29B_v10_bf16.safetensors` | `diffusion_models/` (または `unet/`) |
 | `qwen_3_06b_base.safetensors` | `text_encoders/` (または `clip/`) |
 | `qwen_image_vae.safetensors` | `vae/` |
 
