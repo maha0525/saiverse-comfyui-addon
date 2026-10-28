@@ -1,7 +1,13 @@
 {
     "name": "saiverse-comfyui-addon",
-    "display_name": "ローカル画像生成 (ComfyUI)",
-    "description": "ローカルで起動している ComfyUI サーバーに接続し、ペルソナが画像を生成できるようにします。生成画像は SAIVerse のアイテムとして登録されます。ComfyUI 本体と生成モデルは別途インストールが必要です (README 参照)。",
+    "display_name": {
+        "ja": "ローカル画像生成 (ComfyUI)",
+        "en": "Local Image Generation (ComfyUI)"
+    },
+    "description": {
+        "ja": "ローカルで起動している ComfyUI サーバーに接続し、ペルソナが画像を生成できるようにします。生成画像は SAIVerse のアイテムとして登録されます。ComfyUI 本体と生成モデルは別途インストールが必要です (README 参照)。",
+        "en": "Connects to a local ComfyUI server to enable personas to generate images. Generated images are saved as SAIVerse items. Requires ComfyUI and models installed separately (see README)."
+    },
     "version": "0.2.0",
     "manifest_version": 2
 }
