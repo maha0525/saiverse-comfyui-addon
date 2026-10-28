@@ -1,7 +1,13 @@
 {
   "name": "generate_image_local",
-  "display_name": "ローカル画像生成",
-  "description": "Generate an image using the local ComfyUI server with Anima model",
+  "display_name": {
+    "ja": "ローカル画像生成",
+    "en": "Local Image Generation"
+  },
+  "description": {
+    "ja": "ローカルのComfyUIサーバーとAnimaモデルを使用して画像を生成します。",
+    "en": "Generate an image using the local ComfyUI server with Anima model."
+  },
   "input_schema": [
     {
       "name": "input",
